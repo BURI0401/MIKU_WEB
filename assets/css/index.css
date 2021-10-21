@@ -1,0 +1,126 @@
+.content .PAGE_BG{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+.content .PAGE_BG div{
+    width: 100%;
+    height: 100vh;
+}
+.content .PAGE_BG .bg1{
+    background-image: url("/assets/img/MIKU♪_aoringo1205_202110160039.jpg"); /*https://piapro.jp/t/YxPg*/
+    background-size: cover;
+    background-position: center;
+}
+.content .PAGE_BG .static{
+    position: fixed;
+}
+
+.content main .grid1{
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: table;
+    z-index: 1000;
+}
+.content main .grid1 .g1-cont{
+    display: table-cell;
+    color: #ffff00;
+    vertical-align: middle;
+    text-align: center;
+    height: 100vh;
+    margin: 10px auto;
+}
+.content main .grid1 .g1-cont .titles span{
+    display: block;
+    margin: auto;
+    filter: drop-shadow(10px 3px 4px #3a3a3a);
+}
+.content main .grid1 .g1-cont .titles span.subt{
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.content main .grid1 .g1-cont .titles span.maint{
+    font-size: 118px;
+    letter-spacing: 24px;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+}
+.content main .grid1 .g1-cont .buttons{
+    text-align: center;
+    margin: 30px auto;
+    font-size: 64px;
+}
+.content main .grid1 .g1-cont .buttons .bt{
+    display: inline-block;
+    border: 3px solid #000;
+}
+.content main .grid1 .g1-cont .buttons .bt a{
+    background-color: #fff;
+    display: block;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+    padding: 30px 0px;
+    width: 300px;
+    max-width: 90vw;
+    transition-duration: 400ms;
+    overflow-x: visible;
+    word-wrap:unset;
+    overflow-wrap: unset;
+}
+.content main .grid1 span.bg-cpr{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    color: #cecece;
+    background-color: rgba(0,0,0,0.8);
+    padding-left: 10px;
+    padding-top: 3px;
+}
+.content main .grid1 span.bg-cpr a{
+    color: #cecece;
+}
+.content main .grid1 .g1-cont .buttons .bt a:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.content main .grid2{
+    background-color: rgba(91, 255, 247, 0.897);
+    width: 100%;
+    display: block;
+    font-size: 0px;
+}
+.content main .grid2 .g2-textbox{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+.content main .grid2 .g2-textbox .g2-text{
+    width: 80%;
+    font-size: 18px;
+    margin: 20px auto;
+    text-align: left;
+    color: rgb(36, 36, 36);
+    background-color: rgba(255, 255, 255, 0.336);
+    padding: 15px;
+}
+.content main .grid2 .g2-textbox .g2-text p{
+    font-size: 18px;
+}
+.content main .grid2 .g2-img{
+    width: 50%;
+    min-width: 240px;
+    display: inline-block;
+}
+.content main .grid2 .g2-img img{
+    width: 100%;
+    display: block;
+}
+
+.content main .grid3{
+    background-image: url("/assets/img/アイコン用_m877877_202110160040.jpg");
+}
