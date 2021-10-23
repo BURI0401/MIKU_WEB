@@ -7,6 +7,7 @@
     <title>MIKU BOT</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/index.css">
@@ -22,6 +23,7 @@
     <div class="content">
         <div class="PAGE_BG">
             <div class="bg1 static"></div>
+            <div class="bg2 static hidden"></div>
         </div>
         <header>
             
@@ -77,25 +79,23 @@
                     <span class="title t-ja">使用例</span>
                     <div class="g3-i-li">
                         <input type="checkbox" name="g3-a" id="g3-a" class="hidden">
-                        <label for="g3-a" class="tab-title"><img src="/assets/img/expand_more_black_24dp.svg" alt="">&nbsp;Example1</label>
+                        <label for="g3-a" class="tab-title"><img src="/assets/img/expand_more_black_24dp.svg" alt="">&nbsp;音楽再生</label>
                         <ul>
                             <li>
-                                <span class="ss-t">YouTube</span>
-                                
-                                    <img src="/assets/img/MIKU♪_aoringo1205_202110160039.jpg" alt="">
-                                
+                                <span class="ss-t">音楽再生コマンド(m!p)の使用例：</span>
+                                    <img src="/assets/img/usage-ss1.png" alt="">
                             </li>
                         </ul>
                     </div>
                     
-                    <div class="g3-i-li">
+                    <div class="g3-i-li" style="display: none;">
                         <input type="checkbox" name="g3-a" id="g3-b" class="hidden">
                         <label for="g3-b" class="tab-title"><img src="/assets/img/expand_more_black_24dp.svg" alt="">&nbsp;Example2</label>
                         <ul>
                             <li>
                                 <span class="ss-t">YouTube</span>
                                 <div class="yt-box">
-                                    <iframe src="https://www.youtube.com/embed/u_QS0sjg6YU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
                             </li>
                         </ul>
@@ -115,6 +115,9 @@
                         <a class="contact-btn" href="/contact?ty=newbot&to=BURI">作成を依頼する</a>
                     </div>
                 </div>
+                <div class="bg-cpr-box">
+                    <span class="bg-cpr">BG: <a href="https://piapro.jp/t/TbTW" target="_blank">ミクさん</a> / <a href="https://piapro.jp/emutwoenu2339" target="_blank">みかん</a></span>
+                </div>
             </div>
         </main>
         <footer>
@@ -124,6 +127,8 @@
                     <li><a href="/">トップ</a></li>
                     <li><a href="https://r.mikubot.top/discord">サポートサーバー</a></li>
                     <li><a href="/invite">Botを招待</a></li>
+                    <li><a href="/usage">使い方</a></li>
+                    <li><a href="/commands">コマンド一覧</a></li>
                     <li><a href="/contact">お問い合わせ</a></li>
                 </ul>
                 <div class="devers">
@@ -161,6 +166,18 @@
                 </ul>
             </div>
         </footer>
+        <script>
+            var bg_fading = false;
+            $(window).scroll(function (){
+                var pos = $(window).scrollTop();
+                var tar = $(".content main .grid-crereq").offset().top-100-$(window).height();
+                if(pos>=tar){
+                    $(".content .PAGE_BG .bg2").removeClass("hidden");
+                }else{
+                    $(".content .PAGE_BG .bg2").addClass("hidden");
+                }
+            });
+        </script>
     </div>
 </body>
 </html>
