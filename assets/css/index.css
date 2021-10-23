@@ -16,7 +16,7 @@
 .content .PAGE_BG .bg2{
     background: url("/assets/img/ミクさん_emutwoenu2339_202110232310.jpg");/*https://piapro.jp/t/TbTW*/
     background-size: cover;
-    background-position: center;
+    background-position: left;
     transition-duration: 1.5s;
     opacity: 1;
 }
