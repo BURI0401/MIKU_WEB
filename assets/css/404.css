@@ -1,0 +1,83 @@
+.content .PAGE_BG{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+.content .PAGE_BG div{
+    width: 100%;
+    height: 100vh;
+}
+.content .PAGE_BG .bg1{
+    background-image: url("/assets/img/MIKU♪_aoringo1205_202110160039.jpg"); /*https://piapro.jp/t/YxPg*/
+    background-size: cover;
+    background-position: center;
+}
+.content .PAGE_BG .bg2{
+    background: url("/assets/img/ミクさん_emutwoenu2339_202110232310.jpg");/*https://piapro.jp/t/TbTW*/
+    background-size: cover;
+    background-position: left;
+    transition-duration: 1.5s;
+    opacity: 1;
+}
+.content .PAGE_BG .hidden{
+    opacity: 0;
+    display: block;
+}
+.content .PAGE_BG .static{
+    position: fixed;
+}
+
+
+
+
+
+.content main {
+    width: 100%;
+}
+.content main .error{
+    width: 80%;
+    min-width: 480px;
+    margin: 15vh auto;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.589);
+    padding: 25px 0px;
+}
+.content main .error .title{
+    font-size: 72px;
+    font-family: 'Bebas Neue', cursive;
+    color: #ff5b60;
+    filter: drop-shadow(0px 0px 5px #000) drop-shadow(0px 0px 10px #fff);
+}
+.content main .error .info{
+    width: 60%;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.822);
+    border-radius: 10px;
+    padding: 10px;
+    color: #303030;
+}
+.content main .error .info .txt{
+    width: 80%;
+    margin: 10px auto;
+}
+.content main .error .info .about{
+    height: 28px;
+    font-size: 20pt;
+    display: inline-block;
+}
+.content main .error .info .txt p{
+    font-size: 16pt;
+}
+.content main .error .info .txt ul{
+    margin: 20px auto;
+    margin-top: 0;
+    display: inline-block;
+    width: auto;
+    list-style: none;
+    border: 1px solid #303030;
+    padding: 10px 30px;
+}
+.content main .error .info .txt span.br{
+    display: inline-block;
+}
